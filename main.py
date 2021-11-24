@@ -31,7 +31,7 @@ async def start(bot, update):
 @Ek.on_message(filters.private & filters.command(["help"]))
 async def help(bot, update):
     HELP = "Hai {} \n\n**There Is Nothing To Know More.** \n- Send Me A Song Name, I Will Give Lyrics Of That Song. \nBot By @UpdateBots1 "
-    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/EKBOTZ_UPDATE"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")]])
+    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")]])
     await update.reply_text(
         text=HELP.format(update.from_user.mention),
         reply_markup=HELP_BUTTON,
