@@ -5,9 +5,9 @@ A Telegram Bot That Can Find Lyrics Of Song
 
 ---
 
-<a href="https://telegram.dog/EKBOTZ_UPDATE"><img src="https://img.shields.io/badge/Telegram-Channel-blue.svg?logo=telegram"></a>
-<a href="https://telegram.dog/ekbotz_support"><img src="https://img.shields.io/badge/Telegram-Group-blue.svg?logo=telegram"></a>
-<a href="https://telegram.dog/EK_Lyrics_Search_Bot"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
+<a href="https://telegram.dog/UpdateBots1"><img src="https://img.shields.io/badge/Telegram-Channel-blue.svg?logo=telegram"></a>
+<a href="https://telegram.dog/Soon"><img src="https://img.shields.io/badge/Telegram-Group-blue.svg?logo=telegram"></a>
+<a href="https://telegram.dog/LyricsSearchPro_Bot"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
 
 ---
 
@@ -17,7 +17,7 @@ A Simple Telegram Bot That Can Extract Lyrics Of Any Songs
 
 ## Deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/M-fazin/Lyrics-Search-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot)
 
 ---
 
@@ -42,13 +42,13 @@ about - To Get Info Of Bot
 
 ## Licence
 
-Copyright (c) 2021 Muhammed Fazin EK [MIT License](/LICENSE)
+Copyright (c) 2021 Aisyah [MIT License](/LICENSE)
 
 ---
 
 ## Credits
 
-- [M-fazin](https://github.com/M-fazin) (Developer & Owner)
+- [Aisyah](https://github.com/INDOHACKER-XODE) (Developer & Owner)
 - [Pyrogram](https://pyrogram.org) (Library)
 - [Aditya](https://github.com/xditya) For His [API](https://apis.xditya.me/lyrics?song=)
 
