@@ -31,7 +31,7 @@ async def start(bot, update):
 @Ek.on_message(filters.private & filters.command(["help"]))
 async def help(bot, update):
     HELP = "Hai {} \n\n**There Is Nothing To Know More.** \n- Send Me A Song Name, I Will Give Lyrics Of That Song. \nBot By @UpdateBots1 "
-    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")]])
+    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot"),InlineKeyboardButton("👤 Owner", url = http://t.me/heorchan")]])
     await update.reply_text(
         text=HELP.format(update.from_user.mention),
         reply_markup=HELP_BUTTON,
@@ -41,7 +41,7 @@ async def help(bot, update):
 	
 @Ek.on_message(filters.private & filters.command(["about", "source", "repo"]))
 async def about(bot, update):
-    ABOUT = "**🤖 Bot :** Lyrics Search Bot\n\n**🧑‍💻 Developer :** [Aisyah](https://github.com/INDOHACKER-XODE)\n\n**💻 Channel :** @UpdateBots1\n\n**☎️ Support :** @SoonYa \n\n**🗂️ Source Code :** [Lyrics Search Bot](https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot)\n\n**⚙️ Language :** Python 3\n\n**🛡️ Framework :** Pyrogram"
+    ABOUT = "**🤖 Bot :** Lyrics Search Bot\n\n**🧑‍💻 Developer :** [Kim](https://github.com/INDOHACKER-XODE)\n\n**💻 Channel :** @UpdateBots1\n\n**☎️ Support :** @heorchan \n\n**🗂️ Source Code :** [Lyrics Search Bot](https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot)\n\n**⚙️ Language :** Python 3\n\n**🛡️ Framework :** Pyrogram"
     await update.reply_text(
 	text=ABOUT,
 	disable_web_page_preview=True,
@@ -59,7 +59,7 @@ async def sng(bot, message):
                 await Ek.send_message(chat_id, text = rpl, reply_to_message_id = message.message_id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Dev 🔗 ", url = f"github.com/INDOHACKER-XODE")], [InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")]]))
         except requests.ConnectionError as exception:
         	await hy.delete()
-        	await message.reply_text(f"I Can't Find A Song With `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Developer", url = f"github.com/INDOHACKER-XODE")], [InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")]]))
+        	await message.reply_text(f"I Can't Find A Song With `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Developer", url = f"github.com/INDOHACKER-XODE")], [InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot"),InlineKeyboardButton ("👤 Owner", url = http://t.me/heorchan")]]))
 
 
 def search(song):
@@ -71,7 +71,7 @@ def lyrics(song):
         fin = search(song)
         text = f'**🎶 Successfully Extracted Lyrics Of {song} 🎶**\n\n\n\n'
         text += f'`{fin["lyrics"]}`'
-        text += '\n\n\n**Made With ❤️ By @UpdateBots1**'
+        text += '\n\n\n**Made With ❤️ By @UpdateBots1 / @heorchan**'
         return text
 
 
