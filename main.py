@@ -20,7 +20,7 @@ Ek = Client(
 @Ek.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     TEXT = "Hai {} \n\n**I Am Lyrics Search Bot. Send Me A Song Name, I Will Give You The Lyrics. ** \n\nFor Know More /help"
-    BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("Channel 🔰", url = "https://t.me/UpdateBots1"),InlineKeyboardButton("Support Group ⭕️", url = "https://t.me/SoonYak")],[InlineKeyboardButton("Repo 🗂️", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot"),InlineKeyboardButton("Deploy 🗃️", url = "https://heroku.com/deploy?template=https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")],[InlineKeyboardButton("Developer 💡", url = "https://github.com/INDOHACKER-XODE/")]])
+    BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("Channel 🔰", url = "https://t.me/UpdateBots1"),InlineKeyboardButton("Owner", url = "https://t.me/heorchan")],[InlineKeyboardButton("Repo 🗂️", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot"),InlineKeyboardButton("Deploy 🗃️", url = "https://heroku.com/deploy?template=https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")],[InlineKeyboardButton("Developer 💡", url = "https://github.com/INDOHACKER-XODE/")]])
     await update.reply_text(
         text=TEXT.format(update.from_user.mention),
         reply_markup=BUTTONS,
@@ -31,7 +31,7 @@ async def start(bot, update):
 @Ek.on_message(filters.private & filters.command(["help"]))
 async def help(bot, update):
     HELP = "Hai {} \n\n**There Is Nothing To Know More.** \n- Send Me A Song Name, I Will Give Lyrics Of That Song. \nBot By @UpdateBots1 "
-    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot"),InlineKeyboardButton("👤 Owner", url = http://t.me/heorchan")]])
+    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")]])
     await update.reply_text(
         text=HELP.format(update.from_user.mention),
         reply_markup=HELP_BUTTON,
@@ -59,7 +59,7 @@ async def sng(bot, message):
                 await Ek.send_message(chat_id, text = rpl, reply_to_message_id = message.message_id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Dev 🔗 ", url = f"github.com/INDOHACKER-XODE")], [InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")]]))
         except requests.ConnectionError as exception:
         	await hy.delete()
-        	await message.reply_text(f"I Can't Find A Song With `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Developer", url = f"github.com/INDOHACKER-XODE")], [InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot"),InlineKeyboardButton ("👤 Owner", url = http://t.me/heorchan")]]))
+        	await message.reply_text(f"I Can't Find A Song With `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Developer", url = f"github.com/INDOHACKER-XODE")], [InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/UpdateBots1"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/INDOHACKER-XODE/Lyrics-Search-Bot")]]))
 
 
 def search(song):
